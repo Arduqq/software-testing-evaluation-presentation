@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Abschlussprojekt: Hate Crimes London Cluster Force Visualization</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <b><h2>Software Testing Evaluation</h2></b>
+                <h4>Artur Solomonik</h4>
+                <h4>Bauhaus-Universität Weimar</h4>
+            </section>
+            <section>
+                <section>
+                    <h2>19.10.2018: Klassifizierung</h2>
+                </section>
+                <section>
+                	<h3>Issues</h3>
+                	<ul>
+                		<li>Überarbeitung der alten Daten</li>
+                		<li>Ansatz zur Klassifizierung von Evaluationsstrategien</li>
+                		<li>Ausweitung der Daten auf aktuelle Journals und Konferenzen</li>
+                	</ul>
+                </section>
+                <section>
+                	<h3>Merkmale der Evaluation</h3>
+                	<ul>
+                		<li><b>benchmark / dataset state:</b> Anpassung der Evaluationsdaten</li>
+                		<li><b>selection cause:</b> Grund für die Anpassung/Auswahl der Daten</li>
+                		<li><b>module count:</b> Anzahl und Art der getesteten Module</li>
+                		<li><b>test case creation:</b> Auswahl oder Generierung von Testfällen</li>
+                		<li><b>choice of metric:</b> Evaluierung von Performanz oder Funktionalität</li>
+                		<li><b>(exclusive) comparison:</b> Evaluierung (ausschließlich) aufbauend auf oder abhängig von anderen Frameworks</li>
+                	</ul>
+                </section>
+                <section>
+                	<h3>Verwendungsgründe für Benchmarks</h3>
+                	<ul>
+                		<li>Großer Umfang an testbaren Modulen</li>
+                		<li>Fehlerbehaftete Implementierung</li>
+                		<li>Hohe Qualität und Komplexität</li>
+                		<li>Umfangreiche, einsehbare Bug-History</li>
+                		<li>Popularität</li>
+                		<li>Themenorientierung</li>
+                		<li>Wahllos und Zahlreich</li>
+                	</ul>
+                </section>
+                <section>
+                	<h3>Issues</h3>
+                	<ul>
+                		<li>Weitere Datensätze zu neueren Journals und Konferenzen</li>
+                		<li>Konkrete Klassifizierung der Evaluierungen</li>
+                		<li>Relevante Klassen finden</li>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function() {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+        Reveal.configure({
+            slideNumber: 'c/t'
+        });
+    </script>
+</body>
+</html>
